@@ -136,7 +136,7 @@ The zoos want to display both the scientific name and the animal name in front o
 ***********************************************************************DONE****************************************************************************/*/
 
 const displayNames = [];
-zooAnimals.forEach(element => displayNames.push(`${element.animal_name} ${element.scientific_name}`}));
+zooAnimals.forEach(element => displayNames.push(`${element.animal_name} ${element.scientific_name}`));
 console.log(displayNames);
 
 
@@ -166,7 +166,7 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 const populationTotal = zooAnimals.reduce((accumulator, current) => {
-return acc + current.population;
+return acccumulator + current.population;
 }, 0);
 console.log(populationTotal);
 
